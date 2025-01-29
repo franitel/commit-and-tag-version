@@ -1,0 +1,19 @@
+name: 'commit-and-tag-version'
+description: 'Run commit-and-tag-version in a local repo using ssh private key'
+inputs:
+  PLUGIN_SSH_PRIVATE_KEY:
+    description: Private key required to connect to the git repo
+    required: true
+  PLUGIN_KNOWN_HOST:
+    description: Repo hostname/ip required to include in the known_hosts
+    required: true
+  PLUGIN_PREFIX:
+    description: 
+    required: false
+    default: 'v'
+  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs }}
