@@ -15,8 +15,8 @@ Not required. The values previous to the version. v1.1.2    Default "v".
 
 ## Example usage
 
-uses: franitel/commit-and-tag-version@v1\n
-with:\n
-  PLUGIN_SSH_PRIVATE_KEY:	'SSH_PRIVATE_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n-----END OPENSSH PRIVATE KEY-----'\n
-	PLUGIN_KNOWN_HOST: 'www.mygithost.com'\n
-	PLUGIN_PREFIX: 'v'\n
+uses: franitel/commit-and-tag-version@v1
+with:
+  PLUGIN_SSH_PRIVATE_KEY:	'SSH_PRIVATE_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n-----END OPENSSH PRIVATE KEY-----'
+  PLUGIN_KNOWN_HOST: 'www.mygithost.com'
+  PLUGIN_PREFIX: 'v'
