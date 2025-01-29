@@ -1,6 +1,5 @@
 #!/bin/sh
 
-Required environment variables
 if [ -z "$PLUGIN_SSH_PRIVATE_KEY" ]; then
    echo "[ERROR] SSH_PRIVATE_KEY must be configured"
    exit 1
