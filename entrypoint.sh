@@ -12,7 +12,7 @@ fi
 
 mkdir ~/.ssh
 eval $(ssh-agent -s)
-ssh-keyscan '$PLUGIN_KNOWN_HOST' >> ~/.ssh/known_hosts 2>/dev/null
+ssh-keyscan $PLUGIN_KNOWN_HOST >> ~/.ssh/known_hosts 2>/dev/null
 ssh-agent bash -c "ssh-add <(echo '$PLUGIN_SSH_PRIVATE_KEY')"
 
 git fetch
