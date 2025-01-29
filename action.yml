@@ -1,5 +1,5 @@
 name: 'commit-and-tag-version'
-description: 'Run commit-and-tag-version in a local repo using ssh private key'
+description: 'Run commit-and-tag-version in a external repo using ssh private key'
 inputs:
   PLUGIN_SSH_PRIVATE_KEY:
     description: Private key required to connect to the git repo
