@@ -14,9 +14,9 @@ mkdir ~/.ssh
 eval $(ssh-agent -s)
 ssh-keyscan $PLUGIN_KNOWN_HOST >> ~/.ssh/known_hosts 2>/dev/null
 ssh-add <(echo "${PLUGIN_SSH_PRIVATE_KEY}")
-git config --global user.email $EMAIL
-git config --global user.name $NAME
-cat ~/.gitconfig
+git config --global user.email $PLUGIN_EMAIL
+git config --global user.name $PLUGIN_NAME
+
 git fetch
 
 if [ "$PLUGIN_PREFIX" ]; then
