@@ -11,6 +11,14 @@ inputs:
     description: 
     required: false
     default: 'v'
+  PLUGIN_EMAIL:
+    description: 
+    required: true
+    default: "local@localhost"
+  PLUGIN_NAME:
+    description: 
+    required: true
+    default: 'local'
   
 runs:
   using: 'docker'
