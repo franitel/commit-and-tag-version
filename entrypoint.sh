@@ -25,5 +25,5 @@ else
     commit-and-tag-version -t ''
 fi
 
-git push origin "${GITHUB_BASE_REF}"
+git push origin "${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
 git push --tags
