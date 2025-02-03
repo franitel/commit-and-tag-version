@@ -27,4 +27,3 @@ fi
 
 git push origin "${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
 git push --tags
-#git push -f --tags
