@@ -12,4 +12,3 @@ RUN chmod +x /bin/entrypoint.sh
 WORKDIR /src
 
 ENTRYPOINT /bin/entrypoint.sh
-
