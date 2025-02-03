@@ -1,7 +1,7 @@
 FROM alpine
 
 ARG VERSION=v12.5.0
-RUN apk add --update --no-cache git ca-certificates nodejs npm openssh
+RUN apk add --update --no-cache git ca-certificates nodejs npm openssh bash
 
 RUN npm i -g commit-and-tag-version@${VERSION}
 
