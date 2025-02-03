@@ -26,4 +26,4 @@ else
 fi
 
 git push origin "${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
-git push --tags --tag-force
+git push -f --tags
