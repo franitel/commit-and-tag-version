@@ -20,9 +20,9 @@ git config --global user.name $PLUGIN_NAME
 git fetch
 
 if [ "$PLUGIN_PREFIX" ]; then
-    commit-and-tag-version -t ${PLUGIN_PREFIX}
+    commit-and-tag-version -t ${PLUGIN_PREFIX} --tag-force
 else
-    commit-and-tag-version -t ''
+    commit-and-tag-version -t '' --tag-force
 fi
 
 git push origin "${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
